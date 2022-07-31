@@ -1,15 +1,18 @@
 <template>
   <div>
-    黑马头条
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-export default {
+// 验证函数封装 接口返回一个函数
+// import {request } from "@/utils/request"
 
+export default {
+  created() {
+    // console.log(this);
+  }
 }
 </script>
 
-<style>
-
-</style>
+<style scoped lang="less"></style>
