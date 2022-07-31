@@ -1,12 +1,28 @@
 <template>
   <div>
-    我的
+    <header>
+      <div v-if="isLogin">已登录的盒子</div>
+      <div v-else>未登录的盒子</div>
+    </header>
+    <main>收藏/历史/</main>
+    <footer >
+      <button v-if="isLogin" @click="logout">退出</button>
+    </footer>
   </div>
 </template>
 
 <script>
 export default {
-
+  computed: {
+    isLogin () {
+      return !!this.$store.state.tokenObj.token
+    }
+  },
+  methods: {
+    logout () {
+      this.$store.commit('STE_TOKEN', {})
+    }
+  }
 }
 </script>
 

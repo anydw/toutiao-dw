@@ -18,7 +18,7 @@
 export default {
   data () {
     return {
-     tabbarData: [
+      tabbarData: [
         {
           to: '/layout/ ',
           icon: 'toutiao-shouye1',
@@ -39,9 +39,9 @@ export default {
           icon: 'toutiao-wode',
           text: '我的'
         }
-    ] 
+      ]
     }
- }
+  }
 }
 </script>
 

@@ -8,7 +8,7 @@ export default new Vuex.Store({
   // 存储状态
   state: {
     //  tokenObj:storage.get("HEIMA_TOUTIAO_TOKEN") || {}
-    tokenObj: gettoken()
+    tokenObj: gettoken() || {}
   },
   getters: {},
   // 同步修改状态

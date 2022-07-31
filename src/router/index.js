@@ -12,6 +12,7 @@ const routes = [
   {
     path: '/layout',
     component: () => import('@/views/layout'),
+    redirect: '/layout/ ',
     children: [
       {
         path: ' ',
@@ -32,7 +33,6 @@ const routes = [
     ]
   }
 ]
-
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
