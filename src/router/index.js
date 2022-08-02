@@ -5,14 +5,14 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/login',
+    path: '/layout',
     // 实现页面懒加载
     component: () => import('@/views/login')
   },
   {
-    path: '/layout',
+    path: '/',
     component: () => import('@/views/layout'),
-    redirect: '/layout/ ',
+    redirect: ' ',
     children: [
       {
         path: ' ',
@@ -34,8 +34,6 @@ const routes = [
   }
 ]
 const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
   routes
 })
 

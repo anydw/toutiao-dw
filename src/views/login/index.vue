@@ -71,6 +71,7 @@ export default {
           data: { data: token }
         } = await login(data)
         this.$store.commit('STE_TOKEN', token)
+        this.$router.push('/my')
         this.$toast.success('登录成功')
       } catch (error) {
         console.log(error)

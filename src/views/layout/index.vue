@@ -20,22 +20,22 @@ export default {
     return {
       tabbarData: [
         {
-          to: '/layout/ ',
+          to: '/ ',
           icon: 'toutiao-shouye1',
           text: '首页'
         },
         {
-          to: '/layout/video',
+          to: '/video',
           icon: 'toutiao-shipin',
           text: '视频'
         },
         {
-          to: '/layout/qa',
+          to: '/qa',
           icon: 'toutiao-wenda',
           text: '问答'
         },
         {
-          to: '/layout/my',
+          to: '/my',
           icon: 'toutiao-wode',
           text: '我的'
         }

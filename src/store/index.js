@@ -17,7 +17,7 @@ export default new Vuex.Store({
       // 将token存入VUEX
       state.tokenObj = payload
       // token存入本地
-      console.log(11111)
+      // console.log(11111)
       // localStorage.setItem("HEIMA_TOUTIAO_TOKEN",JSON.stringify(payload))
       // storage.set("HEIMA_TOUTIAO_TOKEN",payload)
       settoken(payload)
