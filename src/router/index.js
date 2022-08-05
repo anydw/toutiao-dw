@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/layout',
+    path: '/login',
     // 实现页面懒加载
     component: () => import('@/views/login')
   },
