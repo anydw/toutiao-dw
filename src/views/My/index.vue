@@ -1,11 +1,14 @@
 <template>
   <div>
     <header>
-      <div v-if="isLogin">已登录的盒子</div>
+      <div v-if="isLogin">
+        已登录的盒子
+        <button @click="$router.push('/user')">编辑按钮</button>
+      </div>
       <div v-else>未登录的盒子</div>
     </header>
     <main>收藏/历史/</main>
-    <footer >
+    <footer>
       <button v-if="isLogin" @click="logout">退出</button>
     </footer>
   </div>
@@ -14,18 +17,16 @@
 <script>
 export default {
   computed: {
-    isLogin () {
+    isLogin() {
       return !!this.$store.state.tokenObj.token
     }
   },
   methods: {
-    logout () {
+    logout() {
       this.$store.commit('STE_TOKEN', {})
     }
   }
 }
 </script>
 
-<style>
-
-</style>
+<style></style>
