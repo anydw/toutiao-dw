@@ -2,7 +2,6 @@
   <div class="update-avator">
     <!-- this.$refs.image可直接拿到image -->
     <img :src="photo" class="img" ref="image" />
-
     <footer>
       <span @click="$parent.$parent.isShowAvator = false">取消</span>
       <span @click="uploadAvator">完成</span>

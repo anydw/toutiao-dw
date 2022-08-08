@@ -47,3 +47,48 @@ export const uploadAvator = (file) => {
     data: fm
   })
 }
+
+/**
+ *
+ * @param {*} name 提交姓名
+ * @returns
+ */
+export const upLoadName = (name) => {
+  return request({
+    url: '/v1_0/user/profile',
+    method: 'PATCH',
+    data: {
+      name
+    }
+  })
+}
+
+/**
+ *
+ * @param {*} name 提交性别
+ * @returns
+ */
+export const upLoadSex = (gender) => {
+  return request({
+    url: '/v1_0/user/profile',
+    method: 'PATCH',
+    data: {
+      gender
+    }
+  })
+}
+
+/**
+ *
+ * @param {*} name 提交年龄
+ * @returns
+ */
+export const upLoadAge = (birthday) => {
+  return request({
+    url: '/v1_0/user/profile',
+    method: 'PATCH',
+    data: {
+      birthday
+    }
+  })
+}
